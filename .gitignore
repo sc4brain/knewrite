@@ -19,3 +19,9 @@
 *.exe
 *.out
 *.app
+
+# for Qt
+*.user
+moc_*
+ui_*.h
+build-*
