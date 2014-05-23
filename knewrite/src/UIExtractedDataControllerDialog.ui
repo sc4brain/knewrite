@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExtractedDataControllerDialog</class>
+ <widget class="QWidget" name="ExtractedDataControllerDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>818</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Extracted Data Controller</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_15">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="Tabs">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>1</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>400</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>800</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="TabFileLoad">
+      <attribute name="title">
+       <string>File Load</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="GridLayoutFileLoad">
+         <item row="0" column="0">
+          <widget class="QLabel" name="LabelFileLoadFilePath">
+           <property name="text">
+            <string>File Path</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="LineEditFileLoadFilePath">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="PushButtonFileLoadBrowse">
+           <property name="text">
+            <string>Browse</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="LabelFileLoadDirectory">
+           <property name="text">
+            <string>Directory</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="LabelFileLoadBaseName">
+           <property name="text">
+            <string>FileName</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="LineEditFileLoadDirectory">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="LineEditFileLoadFileName">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="LabelFileLoadLoadTo">
+           <property name="text">
+            <string>Store to</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <layout class="QHBoxLayout" name="HorizontalLayoutFileLoadStoreTo">
+           <item>
+            <widget class="QLabel" name="LabelFileLoadEXtractedDataNo">
+             <property name="text">
+              <string>Extracted Data No</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="SpinBoxFileLoadDataNo"/>
+           </item>
+           <item>
+            <spacer name="HorizontalSpacerFileLoadStoreTo">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <layout class="QHBoxLayout" name="HorizontalLayoutFileLoad">
+         <item>
+          <spacer name="HorizontalSpacerFileLoadBottom">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="PushButtonFileLoadClear">
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="PushButtonFileLoadLoad">
+           <property name="text">
+            <string>Load</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <spacer name="VerticalSpacerFileLoad">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabFileSave">
+      <attribute name="title">
+       <string>File Save</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="1" column="0">
+        <spacer name="VerticalSpacerFileSave">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>196</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="0">
+        <layout class="QHBoxLayout" name="HorizontalLayoutFileSaveBottom">
+         <item>
+          <spacer name="HorizontalSpacerFileSaveBottom">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="PushButtonFileSaveClear">
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="PushButtonFileSaveSave">
+           <property name="text">
+            <string>Save</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="GridLayoutFileSave">
+         <item row="1" column="0">
+          <widget class="QLabel" name="LabelFileSaveFilePath">
+           <property name="text">
+            <string>File Path</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="LineEditFileSaveFilePath">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QPushButton" name="PushButtonFileSaveBrowse">
+           <property name="text">
+            <string>Browse</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="LabelFileSaveDirectory">
+           <property name="text">
+            <string>Directory</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="LabelFileSaveBaseName">
+           <property name="text">
+            <string>File Name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLineEdit" name="LineEditFileSaveDirectory">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLineEdit" name="LineEditFileSaveFileName">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <layout class="QHBoxLayout" name="HorizontalLayoutFileSaveDataNo">
+           <item>
+            <widget class="QSpinBox" name="SpinBoxFileSaveDataNo"/>
+           </item>
+           <item>
+            <spacer name="HorizontalSpacerFileSaveDataNo">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="LabelFileSaveSaveFrom">
+           <property name="text">
+            <string>Extracted Data No</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="LabelFileSaveFileFormat">
+           <property name="text">
+            <string>File Format</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QComboBox" name="ComboBoxFileSaveFileFormat"/>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabProcessing">
+      <attribute name="title">
+       <string>Processing</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="GroupBoxProcessingMergeData">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Merge Data</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0" colspan="2">
+           <layout class="QGridLayout" name="GridLayoutProcessingMergeData">
+            <item row="0" column="0">
+             <widget class="QLabel" name="LabelProcessingMergeDataParent">
+              <property name="text">
+               <string>Parent</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="LabelProcessingMergeDataChild">
+              <property name="text">
+               <string>Child</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <layout class="QGridLayout" name="GridLayoutProcessingMergeDataChild">
+              <item row="1" column="0">
+               <widget class="QSpinBox" name="SpinBoxProcessingMergeDataChildDataNo"/>
+              </item>
+              <item row="1" column="1">
+               <widget class="QComboBox" name="ComboBoxProcessingMergeDataChildNodeNo"/>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="LabelProcessingMergeDataChildDataNo">
+                <property name="text">
+                 <string>ExtractedDataNo</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="LabelProcessingMergeDataChildNodeNo">
+                <property name="text">
+                 <string>NodeNo</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="LabelProcessingMergeDataTarget">
+              <property name="text">
+               <string>Target to save</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="GridLayoutProcessingMergeDataParent">
+              <item row="1" column="0">
+               <widget class="QSpinBox" name="SpinBoxProcessingMergeDataParentDataNo"/>
+              </item>
+              <item row="1" column="1">
+               <widget class="QComboBox" name="ComboBoxProcessingMergeDataParentNodeNo"/>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="LabelProcessingMergeDataParentDataNo">
+                <property name="text">
+                 <string>ExtractedDataNo</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="LabelProcessingMergeDataParentNodeNo">
+                <property name="text">
+                 <string>NodeNo</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="2">
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QLabel" name="LabelProcessingMergeDataTargetToSaveExtractedDataNo">
+                <property name="text">
+                 <string>ExtractedDataNo</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="SpinBoxProcessingMergeDataTargetDataNo"/>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>197</width>
+              <height>78</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="0">
+           <spacer name="HorizontalSpacerProcessingMergeData">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="PushButtonProcessingMergeDataMerge">
+            <property name="text">
+             <string>Merge</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="GroupBoxProcessingCompareData">
+         <property name="title">
+          <string>Compare Data</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0" colspan="2">
+           <layout class="QFormLayout" name="FormLayoutProcessingCompareData">
+            <item row="0" column="0">
+             <widget class="QLabel" name="LabelProcessingCompareDataDataNo1">
+              <property name="text">
+               <string>Data No 1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="LabelProcessingCompareDataDataNo2">
+              <property name="text">
+               <string>Data No 2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <layout class="QHBoxLayout" name="HorizontalLayoutProcessingCompareDataData1">
+              <item>
+               <widget class="QSpinBox" name="SpinBoxProcessingCompareDataDataNo1"/>
+              </item>
+              <item>
+               <spacer name="HorizontalSpacerProcessingCompareDataDataNo1">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="1">
+             <layout class="QHBoxLayout" name="HorizontalLayoutProcessingCompareDataDataNo2">
+              <item>
+               <widget class="QSpinBox" name="SpinBoxProcessingCompareDataDataNo2"/>
+              </item>
+              <item>
+               <spacer name="HorizontalSpacerProcessingCompareDataDataNo2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="LabelProcessingCompareDataFilePath">
+              <property name="text">
+               <string>Output File</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLineEdit" name="LineEditProcessingCompareDataFilePath"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="PushButtonProcessingCompareDataBrowse">
+                <property name="text">
+                 <string>Browse</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>324</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>325</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="PushButtonProcessingCompareDataCompare">
+            <property name="text">
+             <string>Compare</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <spacer name="VerticalSpacerProcessig">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabViewControl">
+      <attribute name="title">
+       <string>View Control</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_14">
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <layout class="QHBoxLayout" name="HorizontalLayoutViewControlUpper">
+           <item>
+            <widget class="QLabel" name="LabelViewControlDataNo">
+             <property name="text">
+              <string>ExtractedDataNo</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="SpinBoxViewControlDataNo">
+             <property name="maximum">
+              <number>9</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="CheckBoxViewControlShow">
+             <property name="text">
+              <string>Show</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="HorizontalSpacerViewControlMore">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="PushButtonViewControlMore">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>&amp;More</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="default">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="HorizontalLayoutViewControlMain">
+         <item>
+          <widget class="QGroupBox" name="groupBox_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+             <horstretch>6</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="title">
+            <string>NodeList</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_13">
+            <item row="0" column="0">
+             <widget class="QTableView" name="TableViewViewControlNodeList"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="GroupBoxViewControlPointer">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+             <horstretch>2</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="title">
+            <string>Pointer</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_12">
+            <item row="0" column="3">
+             <layout class="QHBoxLayout" name="horizontalLayout_13">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QLabel" name="LabelViewControlPointerX">
+                  <property name="text">
+                   <string>X</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_14">
+                  <item>
+                   <spacer name="horizontalSpacer_14">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="VerticalSliderViewControlPointerXum">
+                    <property name="minimum">
+                     <number>-300</number>
+                    </property>
+                    <property name="maximum">
+                     <number>300</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_15">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LineEditViewControlPointerXum">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_8">
+                <item>
+                 <widget class="QLabel" name="LabelViewControlPointerY">
+                  <property name="text">
+                   <string>Y</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_15">
+                  <item>
+                   <spacer name="horizontalSpacer_16">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="VerticalSliderViewControlPointerYum">
+                    <property name="minimum">
+                     <number>-300</number>
+                    </property>
+                    <property name="maximum">
+                     <number>300</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_17">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LineEditViewControlPointerYum">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <item>
+                 <widget class="QLabel" name="LabelViewControlPointerZ">
+                  <property name="text">
+                   <string>Z</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_16">
+                  <item>
+                   <spacer name="horizontalSpacer_18">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="VerticalSliderViewControlPointerZum">
+                    <property name="minimum">
+                     <number>-300</number>
+                    </property>
+                    <property name="maximum">
+                     <number>300</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_19">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LineEditViewControlPointerZum">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="0">
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QCheckBox" name="CheckBoxViewControlPointer">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="GroupBoxViewControlTranslation">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+             <horstretch>2</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="title">
+            <string>Translation</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_11">
+            <item row="0" column="0">
+             <layout class="QHBoxLayout" name="HorizontalLayoutViewControlTranslation">
+              <item>
+               <layout class="QVBoxLayout" name="VerticalLayoutViewControlTranslationX">
+                <item>
+                 <widget class="QLabel" name="LabelViewControlTranslationX">
+                  <property name="text">
+                   <string>X</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="HorizontalLayoutViewControlTranslationX">
+                  <item>
+                   <spacer name="HorizontalSpacerViewControlTranslationX1">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="VerticalSliderViewControlTranslationX">
+                    <property name="minimum">
+                     <number>-300</number>
+                    </property>
+                    <property name="maximum">
+                     <number>300</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="HorizontalSpacerViewControlTranslationX2">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LineEditViewControlTranslationX">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LineEditViewControlTranslationXum">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_14">
+                <item>
+                 <widget class="QLabel" name="LabelViewControlTranslationY">
+                  <property name="text">
+                   <string>Y</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="HorizontalLayoutViewControleTranslationY">
+                  <item>
+                   <spacer name="HorizontalSpacerViewControlTranslationY1">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="VerticalSliderViewControlTranslationY">
+                    <property name="minimum">
+                     <number>-300</number>
+                    </property>
+                    <property name="maximum">
+                     <number>300</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="HorizontalSpacerViewControlTranslationY2">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LineEditViewControlTranslationY">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LineEditViewControlTranslationYum">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="VerticalLayoutViewControlTranslationZ">
+                <item>
+                 <widget class="QLabel" name="LabelViewControlTranslationZ">
+                  <property name="text">
+                   <string>Z</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="HorizontalLayoutViewControlTranslationZ">
+                  <item>
+                   <spacer name="HorizontalSpacerViewControlTranslationZ1">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="VerticalSliderViewControlTranslationZ">
+                    <property name="minimum">
+                     <number>-300</number>
+                    </property>
+                    <property name="maximum">
+                     <number>300</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="HorizontalSpacerViewControlTranslationZ2">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LineEditViewControlTranslationZ">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LineEditViewControlTranslationZum">
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabProperties">
+      <attribute name="title">
+       <string>Properties</string>
+      </attribute>
+      <widget class="QWidget" name="gridLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>531</width>
+         <height>401</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="GridLayoutProperties">
+        <item row="0" column="1">
+         <widget class="QLabel" name="LabelPropertiesImageNum">
+          <property name="text">
+           <string>Cluster #</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="LabelPropertiesImageSize">
+          <property name="text">
+           <string>Voxel #</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="LabelPropertiesDirectory">
+          <property name="text">
+           <string>Directory</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="LabelPropertiesImageName">
+          <property name="text">
+           <string>File Name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="LineEditPropertiesImageNum"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="LineEditPropertiesImageSize"/>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="LineEditPropertiesDirectory"/>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="LineEditPropertiesImageName"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>Tabs</tabstop>
+  <tabstop>LineEditFileLoadFilePath</tabstop>
+  <tabstop>PushButtonFileLoadBrowse</tabstop>
+  <tabstop>LineEditFileLoadDirectory</tabstop>
+  <tabstop>LineEditFileLoadFileName</tabstop>
+  <tabstop>SpinBoxFileLoadDataNo</tabstop>
+  <tabstop>PushButtonFileLoadClear</tabstop>
+  <tabstop>PushButtonFileLoadLoad</tabstop>
+  <tabstop>SpinBoxFileSaveDataNo</tabstop>
+  <tabstop>LineEditFileSaveFilePath</tabstop>
+  <tabstop>PushButtonFileSaveBrowse</tabstop>
+  <tabstop>LineEditFileSaveDirectory</tabstop>
+  <tabstop>LineEditFileSaveFileName</tabstop>
+  <tabstop>ComboBoxFileSaveFileFormat</tabstop>
+  <tabstop>PushButtonFileSaveSave</tabstop>
+  <tabstop>PushButtonFileSaveClear</tabstop>
+  <tabstop>SpinBoxProcessingMergeDataParentDataNo</tabstop>
+  <tabstop>ComboBoxProcessingMergeDataParentNodeNo</tabstop>
+  <tabstop>SpinBoxProcessingMergeDataChildDataNo</tabstop>
+  <tabstop>ComboBoxProcessingMergeDataChildNodeNo</tabstop>
+  <tabstop>SpinBoxViewControlDataNo</tabstop>
+  <tabstop>CheckBoxViewControlShow</tabstop>
+  <tabstop>TableViewViewControlNodeList</tabstop>
+  <tabstop>PushButtonViewControlMore</tabstop>
+  <tabstop>CheckBoxViewControlPointer</tabstop>
+  <tabstop>VerticalSliderViewControlPointerXum</tabstop>
+  <tabstop>VerticalSliderViewControlPointerYum</tabstop>
+  <tabstop>VerticalSliderViewControlPointerZum</tabstop>
+  <tabstop>LineEditViewControlPointerXum</tabstop>
+  <tabstop>LineEditViewControlPointerYum</tabstop>
+  <tabstop>LineEditViewControlPointerZum</tabstop>
+  <tabstop>VerticalSliderViewControlTranslationX</tabstop>
+  <tabstop>VerticalSliderViewControlTranslationY</tabstop>
+  <tabstop>VerticalSliderViewControlTranslationZ</tabstop>
+  <tabstop>LineEditViewControlTranslationX</tabstop>
+  <tabstop>LineEditViewControlTranslationY</tabstop>
+  <tabstop>LineEditViewControlTranslationZ</tabstop>
+  <tabstop>LineEditViewControlTranslationXum</tabstop>
+  <tabstop>LineEditViewControlTranslationYum</tabstop>
+  <tabstop>LineEditViewControlTranslationZum</tabstop>
+  <tabstop>LineEditPropertiesImageNum</tabstop>
+  <tabstop>LineEditPropertiesImageSize</tabstop>
+  <tabstop>LineEditPropertiesDirectory</tabstop>
+  <tabstop>LineEditPropertiesImageName</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>PushButtonViewControlMore</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>GroupBoxViewControlPointer</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>748</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>489</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PushButtonViewControlMore</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>GroupBoxViewControlTranslation</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>780</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>697</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
