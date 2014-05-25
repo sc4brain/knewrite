@@ -177,6 +177,21 @@ VMainWindow::VMainWindow()
     Timer->hide();
 }
 
+
+VMainWindow::~VMainWindow()
+{
+    SAFEDELETE(ShapeViewGL);
+    SAFEDELETE(HandTraceOrthoView);
+    SAFEDELETE(StackImageController);
+    SAFEDELETE(ExtractedDataController);
+    SAFEDELETE(ViewController);
+    SAFEDELETE(HandTracingTool);
+    SAFEDELETE(Timer);
+    SAFEDELETE(ExtractionProcessor);
+    SAFEDELETE(DataField);
+    SAFEDELETE(WorkSpace);
+}
+
 void VMainWindow::writeSettings()
 {
     QSettings settings("NasKage", "Neurowalker");

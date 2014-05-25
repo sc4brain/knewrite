@@ -27,6 +27,7 @@ Q_OBJECT
 
 public:
 	VMainWindow();
+    ~VMainWindow();
 
 protected:
 	BDataField               *DataField;
