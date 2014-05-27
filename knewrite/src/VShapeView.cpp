@@ -164,7 +164,7 @@ void VShapeView::mousePressEvent(QMouseEvent *event)
 {
 	if (event->button() == Qt::LeftButton) {
 		isMouseDown = true;
-		rotStartPoint = event->posF();
+        rotStartPoint = event->localPos();
 	}
 }
 
@@ -172,7 +172,7 @@ void VShapeView::mouseMoveEvent(QMouseEvent *event)
 {
 	static double rotCoef = 0.2;
 	if (isMouseDown) {
-		QPointF tempPoint = event->posF();
+        QPointF tempPoint = event->localPos();
 		rotateThetaX += 3.1415926535 / 180 * (tempPoint.x() - rotStartPoint.x()) * rotCoef;
 		rotateThetaY += 3.1415926535 / 180 * (tempPoint.y() - rotStartPoint.y()) * rotCoef;
 		setRotMatrix();

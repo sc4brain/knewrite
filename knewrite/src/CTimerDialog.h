@@ -11,14 +11,14 @@
 #define CTIMERDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QDialog>
-#include <QtGui/QGridLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLCDNumber>
-#include <QtGui/QPushButton>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLCDNumber>
+#include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
 
@@ -80,10 +80,10 @@ public:
 
     void retranslateUi(QDialog *TimerDialog)
     {
-        TimerDialog->setWindowTitle(QApplication::translate("TimerDialog", "Timer", 0, QApplication::UnicodeUTF8));
-        PushButtonStartStop->setText(QApplication::translate("TimerDialog", "Start", 0, QApplication::UnicodeUTF8));
-        PushButtonClear->setText(QApplication::translate("TimerDialog", "Clear", 0, QApplication::UnicodeUTF8));
-        PushButtonSave->setText(QApplication::translate("TimerDialog", "Save", 0, QApplication::UnicodeUTF8));
+        TimerDialog->setWindowTitle(QApplication::translate("TimerDialog", "Timer", 0));
+        PushButtonStartStop->setText(QApplication::translate("TimerDialog", "Start", 0));
+        PushButtonClear->setText(QApplication::translate("TimerDialog", "Clear", 0));
+        PushButtonSave->setText(QApplication::translate("TimerDialog", "Save", 0));
     } // retranslateUi
 
 };

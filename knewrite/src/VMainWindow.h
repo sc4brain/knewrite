@@ -2,7 +2,7 @@
 #define ___V_MAIN_WINDOW_H___
 
 #include <QMainWindow>
-#include <QWorkspace>
+#include <QMdiArea>
 
 #include "VShapeViewGL.h"
 #include "VHandTraceOrthoView.h"

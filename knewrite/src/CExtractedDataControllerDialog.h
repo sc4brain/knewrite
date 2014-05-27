@@ -11,26 +11,26 @@
 #define CEXTRACTEDDATACONTROLLERDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
-#include <QtGui/QComboBox>
-#include <QtGui/QFormLayout>
-#include <QtGui/QGridLayout>
-#include <QtGui/QGroupBox>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QPushButton>
-#include <QtGui/QSlider>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QSpinBox>
-#include <QtGui/QTabWidget>
-#include <QtGui/QTableView>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSlider>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QSpinBox>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTableView>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -1147,77 +1147,77 @@ public:
 
     void retranslateUi(QWidget *ExtractedDataControllerDialog)
     {
-        ExtractedDataControllerDialog->setWindowTitle(QApplication::translate("ExtractedDataControllerDialog", "Extracted Data Controller", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadFilePath->setText(QApplication::translate("ExtractedDataControllerDialog", "File Path", 0, QApplication::UnicodeUTF8));
-        PushButtonFileLoadBrowse->setText(QApplication::translate("ExtractedDataControllerDialog", "Browse", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadDirectory->setText(QApplication::translate("ExtractedDataControllerDialog", "Directory", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadBaseName->setText(QApplication::translate("ExtractedDataControllerDialog", "FileName", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadLoadTo->setText(QApplication::translate("ExtractedDataControllerDialog", "Store to", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadEXtractedDataNo->setText(QApplication::translate("ExtractedDataControllerDialog", "Extracted Data No", 0, QApplication::UnicodeUTF8));
-        PushButtonFileLoadClear->setText(QApplication::translate("ExtractedDataControllerDialog", "Clear", 0, QApplication::UnicodeUTF8));
-        PushButtonFileLoadLoad->setText(QApplication::translate("ExtractedDataControllerDialog", "Load", 0, QApplication::UnicodeUTF8));
-        Tabs->setTabText(Tabs->indexOf(TabFileLoad), QApplication::translate("ExtractedDataControllerDialog", "File Load", 0, QApplication::UnicodeUTF8));
-        PushButtonFileSaveClear->setText(QApplication::translate("ExtractedDataControllerDialog", "Clear", 0, QApplication::UnicodeUTF8));
-        PushButtonFileSaveSave->setText(QApplication::translate("ExtractedDataControllerDialog", "Save", 0, QApplication::UnicodeUTF8));
-        LabelFileSaveFilePath->setText(QApplication::translate("ExtractedDataControllerDialog", "File Path", 0, QApplication::UnicodeUTF8));
-        PushButtonFileSaveBrowse->setText(QApplication::translate("ExtractedDataControllerDialog", "Browse", 0, QApplication::UnicodeUTF8));
-        LabelFileSaveDirectory->setText(QApplication::translate("ExtractedDataControllerDialog", "Directory", 0, QApplication::UnicodeUTF8));
-        LabelFileSaveBaseName->setText(QApplication::translate("ExtractedDataControllerDialog", "File Name", 0, QApplication::UnicodeUTF8));
-        LabelFileSaveSaveFrom->setText(QApplication::translate("ExtractedDataControllerDialog", "Extracted Data No", 0, QApplication::UnicodeUTF8));
-        LabelFileSaveFileFormat->setText(QApplication::translate("ExtractedDataControllerDialog", "File Format", 0, QApplication::UnicodeUTF8));
-        Tabs->setTabText(Tabs->indexOf(TabFileSave), QApplication::translate("ExtractedDataControllerDialog", "File Save", 0, QApplication::UnicodeUTF8));
-        GroupBoxProcessingMergeData->setTitle(QApplication::translate("ExtractedDataControllerDialog", "Merge Data", 0, QApplication::UnicodeUTF8));
-        LabelProcessingMergeDataParent->setText(QApplication::translate("ExtractedDataControllerDialog", "Parent", 0, QApplication::UnicodeUTF8));
-        LabelProcessingMergeDataChild->setText(QApplication::translate("ExtractedDataControllerDialog", "Child", 0, QApplication::UnicodeUTF8));
-        LabelProcessingMergeDataChildDataNo->setText(QApplication::translate("ExtractedDataControllerDialog", "ExtractedDataNo", 0, QApplication::UnicodeUTF8));
-        LabelProcessingMergeDataChildNodeNo->setText(QApplication::translate("ExtractedDataControllerDialog", "NodeNo", 0, QApplication::UnicodeUTF8));
-        LabelProcessingMergeDataTarget->setText(QApplication::translate("ExtractedDataControllerDialog", "Target to save", 0, QApplication::UnicodeUTF8));
-        LabelProcessingMergeDataParentDataNo->setText(QApplication::translate("ExtractedDataControllerDialog", "ExtractedDataNo", 0, QApplication::UnicodeUTF8));
-        LabelProcessingMergeDataParentNodeNo->setText(QApplication::translate("ExtractedDataControllerDialog", "NodeNo", 0, QApplication::UnicodeUTF8));
-        LabelProcessingMergeDataTargetToSaveExtractedDataNo->setText(QApplication::translate("ExtractedDataControllerDialog", "ExtractedDataNo", 0, QApplication::UnicodeUTF8));
-        PushButtonProcessingMergeDataMerge->setText(QApplication::translate("ExtractedDataControllerDialog", "Merge", 0, QApplication::UnicodeUTF8));
-        GroupBoxProcessingCompareData->setTitle(QApplication::translate("ExtractedDataControllerDialog", "Compare Data", 0, QApplication::UnicodeUTF8));
-        LabelProcessingCompareDataDataNo1->setText(QApplication::translate("ExtractedDataControllerDialog", "Data No 1", 0, QApplication::UnicodeUTF8));
-        LabelProcessingCompareDataDataNo2->setText(QApplication::translate("ExtractedDataControllerDialog", "Data No 2", 0, QApplication::UnicodeUTF8));
-        LabelProcessingCompareDataFilePath->setText(QApplication::translate("ExtractedDataControllerDialog", "Output File", 0, QApplication::UnicodeUTF8));
-        PushButtonProcessingCompareDataBrowse->setText(QApplication::translate("ExtractedDataControllerDialog", "Browse", 0, QApplication::UnicodeUTF8));
-        PushButtonProcessingCompareDataCompare->setText(QApplication::translate("ExtractedDataControllerDialog", "Compare", 0, QApplication::UnicodeUTF8));
-        Tabs->setTabText(Tabs->indexOf(TabProcessing), QApplication::translate("ExtractedDataControllerDialog", "Processing", 0, QApplication::UnicodeUTF8));
-        LabelViewControlDataNo->setText(QApplication::translate("ExtractedDataControllerDialog", "ExtractedDataNo", 0, QApplication::UnicodeUTF8));
-        CheckBoxViewControlShow->setText(QApplication::translate("ExtractedDataControllerDialog", "Show", 0, QApplication::UnicodeUTF8));
-        PushButtonViewControlMore->setText(QApplication::translate("ExtractedDataControllerDialog", "&More", 0, QApplication::UnicodeUTF8));
-        groupBox_4->setTitle(QApplication::translate("ExtractedDataControllerDialog", "NodeList", 0, QApplication::UnicodeUTF8));
-        GroupBoxViewControlPointer->setTitle(QApplication::translate("ExtractedDataControllerDialog", "Pointer", 0, QApplication::UnicodeUTF8));
-        LabelViewControlPointerX->setText(QApplication::translate("ExtractedDataControllerDialog", "X", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlPointerXum->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LabelViewControlPointerY->setText(QApplication::translate("ExtractedDataControllerDialog", "Y", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlPointerYum->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LabelViewControlPointerZ->setText(QApplication::translate("ExtractedDataControllerDialog", "Z", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlPointerZum->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0, QApplication::UnicodeUTF8));
+        ExtractedDataControllerDialog->setWindowTitle(QApplication::translate("ExtractedDataControllerDialog", "Extracted Data Controller", 0));
+        LabelFileLoadFilePath->setText(QApplication::translate("ExtractedDataControllerDialog", "File Path", 0));
+        PushButtonFileLoadBrowse->setText(QApplication::translate("ExtractedDataControllerDialog", "Browse", 0));
+        LabelFileLoadDirectory->setText(QApplication::translate("ExtractedDataControllerDialog", "Directory", 0));
+        LabelFileLoadBaseName->setText(QApplication::translate("ExtractedDataControllerDialog", "FileName", 0));
+        LabelFileLoadLoadTo->setText(QApplication::translate("ExtractedDataControllerDialog", "Store to", 0));
+        LabelFileLoadEXtractedDataNo->setText(QApplication::translate("ExtractedDataControllerDialog", "Extracted Data No", 0));
+        PushButtonFileLoadClear->setText(QApplication::translate("ExtractedDataControllerDialog", "Clear", 0));
+        PushButtonFileLoadLoad->setText(QApplication::translate("ExtractedDataControllerDialog", "Load", 0));
+        Tabs->setTabText(Tabs->indexOf(TabFileLoad), QApplication::translate("ExtractedDataControllerDialog", "File Load", 0));
+        PushButtonFileSaveClear->setText(QApplication::translate("ExtractedDataControllerDialog", "Clear", 0));
+        PushButtonFileSaveSave->setText(QApplication::translate("ExtractedDataControllerDialog", "Save", 0));
+        LabelFileSaveFilePath->setText(QApplication::translate("ExtractedDataControllerDialog", "File Path", 0));
+        PushButtonFileSaveBrowse->setText(QApplication::translate("ExtractedDataControllerDialog", "Browse", 0));
+        LabelFileSaveDirectory->setText(QApplication::translate("ExtractedDataControllerDialog", "Directory", 0));
+        LabelFileSaveBaseName->setText(QApplication::translate("ExtractedDataControllerDialog", "File Name", 0));
+        LabelFileSaveSaveFrom->setText(QApplication::translate("ExtractedDataControllerDialog", "Extracted Data No", 0));
+        LabelFileSaveFileFormat->setText(QApplication::translate("ExtractedDataControllerDialog", "File Format", 0));
+        Tabs->setTabText(Tabs->indexOf(TabFileSave), QApplication::translate("ExtractedDataControllerDialog", "File Save", 0));
+        GroupBoxProcessingMergeData->setTitle(QApplication::translate("ExtractedDataControllerDialog", "Merge Data", 0));
+        LabelProcessingMergeDataParent->setText(QApplication::translate("ExtractedDataControllerDialog", "Parent", 0));
+        LabelProcessingMergeDataChild->setText(QApplication::translate("ExtractedDataControllerDialog", "Child", 0));
+        LabelProcessingMergeDataChildDataNo->setText(QApplication::translate("ExtractedDataControllerDialog", "ExtractedDataNo", 0));
+        LabelProcessingMergeDataChildNodeNo->setText(QApplication::translate("ExtractedDataControllerDialog", "NodeNo", 0));
+        LabelProcessingMergeDataTarget->setText(QApplication::translate("ExtractedDataControllerDialog", "Target to save", 0));
+        LabelProcessingMergeDataParentDataNo->setText(QApplication::translate("ExtractedDataControllerDialog", "ExtractedDataNo", 0));
+        LabelProcessingMergeDataParentNodeNo->setText(QApplication::translate("ExtractedDataControllerDialog", "NodeNo", 0));
+        LabelProcessingMergeDataTargetToSaveExtractedDataNo->setText(QApplication::translate("ExtractedDataControllerDialog", "ExtractedDataNo", 0));
+        PushButtonProcessingMergeDataMerge->setText(QApplication::translate("ExtractedDataControllerDialog", "Merge", 0));
+        GroupBoxProcessingCompareData->setTitle(QApplication::translate("ExtractedDataControllerDialog", "Compare Data", 0));
+        LabelProcessingCompareDataDataNo1->setText(QApplication::translate("ExtractedDataControllerDialog", "Data No 1", 0));
+        LabelProcessingCompareDataDataNo2->setText(QApplication::translate("ExtractedDataControllerDialog", "Data No 2", 0));
+        LabelProcessingCompareDataFilePath->setText(QApplication::translate("ExtractedDataControllerDialog", "Output File", 0));
+        PushButtonProcessingCompareDataBrowse->setText(QApplication::translate("ExtractedDataControllerDialog", "Browse", 0));
+        PushButtonProcessingCompareDataCompare->setText(QApplication::translate("ExtractedDataControllerDialog", "Compare", 0));
+        Tabs->setTabText(Tabs->indexOf(TabProcessing), QApplication::translate("ExtractedDataControllerDialog", "Processing", 0));
+        LabelViewControlDataNo->setText(QApplication::translate("ExtractedDataControllerDialog", "ExtractedDataNo", 0));
+        CheckBoxViewControlShow->setText(QApplication::translate("ExtractedDataControllerDialog", "Show", 0));
+        PushButtonViewControlMore->setText(QApplication::translate("ExtractedDataControllerDialog", "&More", 0));
+        groupBox_4->setTitle(QApplication::translate("ExtractedDataControllerDialog", "NodeList", 0));
+        GroupBoxViewControlPointer->setTitle(QApplication::translate("ExtractedDataControllerDialog", "Pointer", 0));
+        LabelViewControlPointerX->setText(QApplication::translate("ExtractedDataControllerDialog", "X", 0));
+        LineEditViewControlPointerXum->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0));
+        LabelViewControlPointerY->setText(QApplication::translate("ExtractedDataControllerDialog", "Y", 0));
+        LineEditViewControlPointerYum->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0));
+        LabelViewControlPointerZ->setText(QApplication::translate("ExtractedDataControllerDialog", "Z", 0));
+        LineEditViewControlPointerZum->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0));
         CheckBoxViewControlPointer->setText(QString());
-        GroupBoxViewControlTranslation->setTitle(QApplication::translate("ExtractedDataControllerDialog", "Translation", 0, QApplication::UnicodeUTF8));
-        LabelViewControlTranslationX->setText(QApplication::translate("ExtractedDataControllerDialog", "X", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlTranslationX->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlTranslationXum->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LabelViewControlTranslationY->setText(QApplication::translate("ExtractedDataControllerDialog", "Y", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlTranslationY->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlTranslationYum->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LabelViewControlTranslationZ->setText(QApplication::translate("ExtractedDataControllerDialog", "Z", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlTranslationZ->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlTranslationZum->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        Tabs->setTabText(Tabs->indexOf(TabViewControl), QApplication::translate("ExtractedDataControllerDialog", "View Control", 0, QApplication::UnicodeUTF8));
-        LabelPropertiesImageNum->setText(QApplication::translate("ExtractedDataControllerDialog", "Cluster #", 0, QApplication::UnicodeUTF8));
-        LabelPropertiesImageSize->setText(QApplication::translate("ExtractedDataControllerDialog", "Voxel #", 0, QApplication::UnicodeUTF8));
-        LabelPropertiesDirectory->setText(QApplication::translate("ExtractedDataControllerDialog", "Directory", 0, QApplication::UnicodeUTF8));
-        LabelPropertiesImageName->setText(QApplication::translate("ExtractedDataControllerDialog", "File Name", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        label_7->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        label_8->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        label_9->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        label_10->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        label_11->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        Tabs->setTabText(Tabs->indexOf(TabProperties), QApplication::translate("ExtractedDataControllerDialog", "Properties", 0, QApplication::UnicodeUTF8));
+        GroupBoxViewControlTranslation->setTitle(QApplication::translate("ExtractedDataControllerDialog", "Translation", 0));
+        LabelViewControlTranslationX->setText(QApplication::translate("ExtractedDataControllerDialog", "X", 0));
+        LineEditViewControlTranslationX->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0));
+        LineEditViewControlTranslationXum->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0));
+        LabelViewControlTranslationY->setText(QApplication::translate("ExtractedDataControllerDialog", "Y", 0));
+        LineEditViewControlTranslationY->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0));
+        LineEditViewControlTranslationYum->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0));
+        LabelViewControlTranslationZ->setText(QApplication::translate("ExtractedDataControllerDialog", "Z", 0));
+        LineEditViewControlTranslationZ->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0));
+        LineEditViewControlTranslationZum->setText(QApplication::translate("ExtractedDataControllerDialog", "0", 0));
+        Tabs->setTabText(Tabs->indexOf(TabViewControl), QApplication::translate("ExtractedDataControllerDialog", "View Control", 0));
+        LabelPropertiesImageNum->setText(QApplication::translate("ExtractedDataControllerDialog", "Cluster #", 0));
+        LabelPropertiesImageSize->setText(QApplication::translate("ExtractedDataControllerDialog", "Voxel #", 0));
+        LabelPropertiesDirectory->setText(QApplication::translate("ExtractedDataControllerDialog", "Directory", 0));
+        LabelPropertiesImageName->setText(QApplication::translate("ExtractedDataControllerDialog", "File Name", 0));
+        label_5->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0));
+        label_6->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0));
+        label_7->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0));
+        label_8->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0));
+        label_9->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0));
+        label_10->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0));
+        label_11->setText(QApplication::translate("ExtractedDataControllerDialog", "TextLabel", 0));
+        Tabs->setTabText(Tabs->indexOf(TabProperties), QApplication::translate("ExtractedDataControllerDialog", "Properties", 0));
     } // retranslateUi
 
 };

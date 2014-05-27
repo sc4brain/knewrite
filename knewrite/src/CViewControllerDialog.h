@@ -11,18 +11,18 @@
 #define CVIEWCONTROLLERDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QDialog>
-#include <QtGui/QGridLayout>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QPushButton>
-#include <QtGui/QSlider>
-#include <QtGui/QSpinBox>
-#include <QtGui/QVBoxLayout>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSlider>
+#include <QtWidgets/QSpinBox>
+#include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 
@@ -214,14 +214,14 @@ public:
 
     void retranslateUi(QDialog *ViewControllerDialog)
     {
-        ViewControllerDialog->setWindowTitle(QApplication::translate("ViewControllerDialog", "View Control Dialog", 0, QApplication::UnicodeUTF8));
-        LabelViewControlRotation->setText(QApplication::translate("ViewControllerDialog", "Rotation", 0, QApplication::UnicodeUTF8));
-        LabelViewControlRotationX->setText(QApplication::translate("ViewControllerDialog", "X", 0, QApplication::UnicodeUTF8));
-        PushButtonViewControlRotationXYPlane->setText(QApplication::translate("ViewControllerDialog", "XY", 0, QApplication::UnicodeUTF8));
-        LabelViewControlRotationY->setText(QApplication::translate("ViewControllerDialog", "Y", 0, QApplication::UnicodeUTF8));
-        PushButtonViewControlRotationYZPlane->setText(QApplication::translate("ViewControllerDialog", "YZ", 0, QApplication::UnicodeUTF8));
-        LabelViewControlRotationZ->setText(QApplication::translate("ViewControllerDialog", "Z", 0, QApplication::UnicodeUTF8));
-        PushButtonViewControlRotationZXPlane->setText(QApplication::translate("ViewControllerDialog", "ZX", 0, QApplication::UnicodeUTF8));
+        ViewControllerDialog->setWindowTitle(QApplication::translate("ViewControllerDialog", "View Control Dialog", 0));
+        LabelViewControlRotation->setText(QApplication::translate("ViewControllerDialog", "Rotation", 0));
+        LabelViewControlRotationX->setText(QApplication::translate("ViewControllerDialog", "X", 0));
+        PushButtonViewControlRotationXYPlane->setText(QApplication::translate("ViewControllerDialog", "XY", 0));
+        LabelViewControlRotationY->setText(QApplication::translate("ViewControllerDialog", "Y", 0));
+        PushButtonViewControlRotationYZPlane->setText(QApplication::translate("ViewControllerDialog", "YZ", 0));
+        LabelViewControlRotationZ->setText(QApplication::translate("ViewControllerDialog", "Z", 0));
+        PushButtonViewControlRotationZXPlane->setText(QApplication::translate("ViewControllerDialog", "ZX", 0));
     } // retranslateUi
 
 };

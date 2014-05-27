@@ -11,24 +11,24 @@
 #define CHANDTRACINGTOOLDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
-#include <QtGui/QDialog>
-#include <QtGui/QDoubleSpinBox>
-#include <QtGui/QFormLayout>
-#include <QtGui/QGridLayout>
-#include <QtGui/QGroupBox>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QPushButton>
-#include <QtGui/QSlider>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QSpinBox>
-#include <QtGui/QTableView>
-#include <QtGui/QVBoxLayout>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QDoubleSpinBox>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSlider>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QSpinBox>
+#include <QtWidgets/QTableView>
+#include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 
@@ -409,27 +409,27 @@ public:
 
     void retranslateUi(QDialog *HandTracingToolDialog)
     {
-        HandTracingToolDialog->setWindowTitle(QApplication::translate("HandTracingToolDialog", "Manual Tracing Tool", 0, QApplication::UnicodeUTF8));
-        GroupBoxNodeList->setTitle(QApplication::translate("HandTracingToolDialog", "Node List", 0, QApplication::UnicodeUTF8));
-        CheckBoxShow->setText(QApplication::translate("HandTracingToolDialog", "Show", 0, QApplication::UnicodeUTF8));
-        CheckBoxSubbranchMode->setText(QApplication::translate("HandTracingToolDialog", "Subbranch Mode", 0, QApplication::UnicodeUTF8));
-        CheckBoxLocalViewMode->setText(QApplication::translate("HandTracingToolDialog", "Local View Mode", 0, QApplication::UnicodeUTF8));
-        PushButtonClearNodeList->setText(QApplication::translate("HandTracingToolDialog", "All Clear", 0, QApplication::UnicodeUTF8));
-        GroupBoxNodeParameters->setTitle(QApplication::translate("HandTracingToolDialog", "Current Node's Parameters", 0, QApplication::UnicodeUTF8));
-        LabelNodeParametersX->setText(QApplication::translate("HandTracingToolDialog", "X", 0, QApplication::UnicodeUTF8));
-        LabelNodeParametersY->setText(QApplication::translate("HandTracingToolDialog", "Y", 0, QApplication::UnicodeUTF8));
-        LabelNodeParametersZ->setText(QApplication::translate("HandTracingToolDialog", "Z", 0, QApplication::UnicodeUTF8));
-        LabelNodeParametersDiam->setText(QApplication::translate("HandTracingToolDialog", "Diam", 0, QApplication::UnicodeUTF8));
-        PushButtonAdd->setText(QApplication::translate("HandTracingToolDialog", "Add", 0, QApplication::UnicodeUTF8));
-        PushButtonDelete->setText(QApplication::translate("HandTracingToolDialog", "Delete", 0, QApplication::UnicodeUTF8));
-        PushButtonDeleteSubbranch->setText(QApplication::translate("HandTracingToolDialog", "Del. Subbranch", 0, QApplication::UnicodeUTF8));
-        PushButtonPrevBranchingPoint->setText(QApplication::translate("HandTracingToolDialog", "<", 0, QApplication::UnicodeUTF8));
-        PushButtonNextBranchingPoint->setText(QApplication::translate("HandTracingToolDialog", ">", 0, QApplication::UnicodeUTF8));
-        PushButtonStore->setText(QApplication::translate("HandTracingToolDialog", "Store Extracted Data", 0, QApplication::UnicodeUTF8));
-        PushButtonGetExtractedData->setText(QApplication::translate("HandTracingToolDialog", "Get Extracted Data", 0, QApplication::UnicodeUTF8));
-        PushButtonGetStackImageData->setText(QApplication::translate("HandTracingToolDialog", "Get Stack Image Data ", 0, QApplication::UnicodeUTF8));
-        PushButtonStoreSubbranch->setText(QApplication::translate("HandTracingToolDialog", "Store Subbranch", 0, QApplication::UnicodeUTF8));
-        PushButtonClose->setText(QApplication::translate("HandTracingToolDialog", "Close", 0, QApplication::UnicodeUTF8));
+        HandTracingToolDialog->setWindowTitle(QApplication::translate("HandTracingToolDialog", "Manual Tracing Tool", 0));
+        GroupBoxNodeList->setTitle(QApplication::translate("HandTracingToolDialog", "Node List", 0));
+        CheckBoxShow->setText(QApplication::translate("HandTracingToolDialog", "Show", 0));
+        CheckBoxSubbranchMode->setText(QApplication::translate("HandTracingToolDialog", "Subbranch Mode", 0));
+        CheckBoxLocalViewMode->setText(QApplication::translate("HandTracingToolDialog", "Local View Mode", 0));
+        PushButtonClearNodeList->setText(QApplication::translate("HandTracingToolDialog", "All Clear", 0));
+        GroupBoxNodeParameters->setTitle(QApplication::translate("HandTracingToolDialog", "Current Node's Parameters", 0));
+        LabelNodeParametersX->setText(QApplication::translate("HandTracingToolDialog", "X", 0));
+        LabelNodeParametersY->setText(QApplication::translate("HandTracingToolDialog", "Y", 0));
+        LabelNodeParametersZ->setText(QApplication::translate("HandTracingToolDialog", "Z", 0));
+        LabelNodeParametersDiam->setText(QApplication::translate("HandTracingToolDialog", "Diam", 0));
+        PushButtonAdd->setText(QApplication::translate("HandTracingToolDialog", "Add", 0));
+        PushButtonDelete->setText(QApplication::translate("HandTracingToolDialog", "Delete", 0));
+        PushButtonDeleteSubbranch->setText(QApplication::translate("HandTracingToolDialog", "Del. Subbranch", 0));
+        PushButtonPrevBranchingPoint->setText(QApplication::translate("HandTracingToolDialog", "<", 0));
+        PushButtonNextBranchingPoint->setText(QApplication::translate("HandTracingToolDialog", ">", 0));
+        PushButtonStore->setText(QApplication::translate("HandTracingToolDialog", "Store Extracted Data", 0));
+        PushButtonGetExtractedData->setText(QApplication::translate("HandTracingToolDialog", "Get Extracted Data", 0));
+        PushButtonGetStackImageData->setText(QApplication::translate("HandTracingToolDialog", "Get Stack Image Data ", 0));
+        PushButtonStoreSubbranch->setText(QApplication::translate("HandTracingToolDialog", "Store Subbranch", 0));
+        PushButtonClose->setText(QApplication::translate("HandTracingToolDialog", "Close", 0));
     } // retranslateUi
 
 };

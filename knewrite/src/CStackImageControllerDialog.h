@@ -11,26 +11,26 @@
 #define CSTACKIMAGECONTROLLERDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
-#include <QtGui/QComboBox>
-#include <QtGui/QDoubleSpinBox>
-#include <QtGui/QFormLayout>
-#include <QtGui/QGridLayout>
-#include <QtGui/QGroupBox>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QPushButton>
-#include <QtGui/QSlider>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QSpinBox>
-#include <QtGui/QTabWidget>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets//QAction>
+#include <QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QDoubleSpinBox>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSlider>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QSpinBox>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -2004,155 +2004,155 @@ public:
 
     void retranslateUi(QWidget *StackImageControllerDialog)
     {
-        StackImageControllerDialog->setWindowTitle(QApplication::translate("StackImageControllerDialog", "Stack Image Controller", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadFilePath->setText(QApplication::translate("StackImageControllerDialog", "File Path", 0, QApplication::UnicodeUTF8));
-        PushButtonFileLoadBrowse->setText(QApplication::translate("StackImageControllerDialog", "Browse", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadDirectory->setText(QApplication::translate("StackImageControllerDialog", "Directory", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadBaseName->setText(QApplication::translate("StackImageControllerDialog", "BaseName", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadScale->setText(QApplication::translate("StackImageControllerDialog", "Scale", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadScaleCommaXY->setText(QApplication::translate("StackImageControllerDialog", ",", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadScaleYZ->setText(QApplication::translate("StackImageControllerDialog", ",", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadScaleUnit->setText(QApplication::translate("StackImageControllerDialog", "um / voxel", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadLoadTo->setText(QApplication::translate("StackImageControllerDialog", "Store to", 0, QApplication::UnicodeUTF8));
-        LabelFileLoadStoreToStackImageDataNo->setText(QApplication::translate("StackImageControllerDialog", "StackImadeDataNo", 0, QApplication::UnicodeUTF8));
-        PushButtonFileLoadClear->setText(QApplication::translate("StackImageControllerDialog", "Clear", 0, QApplication::UnicodeUTF8));
-        PushButtonFileLoadLoad->setText(QApplication::translate("StackImageControllerDialog", "Load", 0, QApplication::UnicodeUTF8));
-        Tabs->setTabText(Tabs->indexOf(TabFileLoad), QApplication::translate("StackImageControllerDialog", "File Load", 0, QApplication::UnicodeUTF8));
-        LabelFileSaveFilePath->setText(QApplication::translate("StackImageControllerDialog", "File Path", 0, QApplication::UnicodeUTF8));
-        PushButtonFileSaveBrowse->setText(QApplication::translate("StackImageControllerDialog", "Browse", 0, QApplication::UnicodeUTF8));
-        LabelFileSaveDirectory->setText(QApplication::translate("StackImageControllerDialog", "Directory", 0, QApplication::UnicodeUTF8));
-        LabelFileSaveBaseName->setText(QApplication::translate("StackImageControllerDialog", "BaseName", 0, QApplication::UnicodeUTF8));
-        LabelFileSaveDataNo->setText(QApplication::translate("StackImageControllerDialog", "Stack Image Data No", 0, QApplication::UnicodeUTF8));
-        PushButtonFileSaveClear->setText(QApplication::translate("StackImageControllerDialog", "Clear", 0, QApplication::UnicodeUTF8));
-        PushButtonFileSaveSave->setText(QApplication::translate("StackImageControllerDialog", "Save", 0, QApplication::UnicodeUTF8));
-        Tabs->setTabText(Tabs->indexOf(TabFileSave), QApplication::translate("StackImageControllerDialog", "File Save", 0, QApplication::UnicodeUTF8));
-        PushButtonExtractionHandTracing->setText(QApplication::translate("StackImageControllerDialog", "Manual", 0, QApplication::UnicodeUTF8));
-        PushButtonExtractionCancel->setText(QApplication::translate("StackImageControllerDialog", "Cancel", 0, QApplication::UnicodeUTF8));
-        PushButtonExtractionExtract->setText(QApplication::translate("StackImageControllerDialog", "Extract", 0, QApplication::UnicodeUTF8));
-        LabelExtractionBinaryThreshold->setText(QApplication::translate("StackImageControllerDialog", "Binary Threshold", 0, QApplication::UnicodeUTF8));
-        PushButtonExtractionBinaryThresholdGetFromView->setText(QApplication::translate("StackImageControllerDialog", "Ref. View", 0, QApplication::UnicodeUTF8));
-        LabelExtractionMedianFilter->setText(QApplication::translate("StackImageControllerDialog", "Median Filter", 0, QApplication::UnicodeUTF8));
-        CheckBoxExtractionMedianFilter->setText(QApplication::translate("StackImageControllerDialog", "ON", 0, QApplication::UnicodeUTF8));
-        LineEditExtractionBinaryThreshold->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LabelExtractionStartPoint->setText(QApplication::translate("StackImageControllerDialog", "Start Point", 0, QApplication::UnicodeUTF8));
-        LineEditExtractionStartPointX->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LabelExtractionStartPointCommaXY->setText(QApplication::translate("StackImageControllerDialog", ",", 0, QApplication::UnicodeUTF8));
-        LineEditExtractionStartPointY->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LabelExtractionStartPointCommaYZ->setText(QApplication::translate("StackImageControllerDialog", ",", 0, QApplication::UnicodeUTF8));
-        LineEditExtractionStartPointZ->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        PushButtonExtractionStartPointGetFromView->setText(QApplication::translate("StackImageControllerDialog", "Ref. View", 0, QApplication::UnicodeUTF8));
-        LabelExtractionDataNo->setText(QApplication::translate("StackImageControllerDialog", "Stack Image Data No", 0, QApplication::UnicodeUTF8));
-        PushButtonExtractionCurrentDataNo->setText(QApplication::translate("StackImageControllerDialog", "CurrentData", 0, QApplication::UnicodeUTF8));
-        LabelExtractionCalcProp->setText(QApplication::translate("StackImageControllerDialog", "Prop. output file", 0, QApplication::UnicodeUTF8));
-        CheckBoxExtractionCalcProp->setText(QApplication::translate("StackImageControllerDialog", "ON", 0, QApplication::UnicodeUTF8));
-        LabelExtractionCalcPropStart->setText(QApplication::translate("StackImageControllerDialog", "Start", 0, QApplication::UnicodeUTF8));
-        LabelExtractionCalcPropStop->setText(QApplication::translate("StackImageControllerDialog", "Stop", 0, QApplication::UnicodeUTF8));
-        LabelExtractionTargetNo->setText(QApplication::translate("StackImageControllerDialog", "Extracted Data No (for Saving)", 0, QApplication::UnicodeUTF8));
-        LabelExtractionROI->setText(QApplication::translate("StackImageControllerDialog", "ROI", 0, QApplication::UnicodeUTF8));
-        CheckBoxExtractionROI->setText(QApplication::translate("StackImageControllerDialog", "ON", 0, QApplication::UnicodeUTF8));
-        LabelExtractionDoRescanning->setText(QApplication::translate("StackImageControllerDialog", "Do Rescanning", 0, QApplication::UnicodeUTF8));
-        CheckBoxExtractionDoRescanning->setText(QApplication::translate("StackImageControllerDialog", "Yes", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("StackImageControllerDialog", "Store To", 0, QApplication::UnicodeUTF8));
-        Tabs->setTabText(Tabs->indexOf(TabExtraction), QApplication::translate("StackImageControllerDialog", "Extraction", 0, QApplication::UnicodeUTF8));
-        GroupBoxImageProcessingGenerateStackImage->setTitle(QApplication::translate("StackImageControllerDialog", "Generate Stack Image", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingGenerateStackImageParam1->setText(QApplication::translate("StackImageControllerDialog", "Param1", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingGenerateStackImageParam2->setText(QApplication::translate("StackImageControllerDialog", "Param2", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingGenerateStackImageParam3->setText(QApplication::translate("StackImageControllerDialog", "Param3", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingGenerateStackImageParam4->setText(QApplication::translate("StackImageControllerDialog", "Param4", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingGenerateStackImageDataNo->setText(QApplication::translate("StackImageControllerDialog", "Stack Image Data No", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingGenerateStackImageType->setText(QApplication::translate("StackImageControllerDialog", "Type", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingGeneratStackImageParam5->setText(QApplication::translate("StackImageControllerDialog", "Param5", 0, QApplication::UnicodeUTF8));
-        PushButtonImageProcessingGenerateStackImage->setText(QApplication::translate("StackImageControllerDialog", "Generate", 0, QApplication::UnicodeUTF8));
-        GroupBoxImageProcessingNoise->setTitle(QApplication::translate("StackImageControllerDialog", "Noise", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingNoiseSD->setText(QApplication::translate("StackImageControllerDialog", "SD", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingNoiseDataNo->setText(QApplication::translate("StackImageControllerDialog", "Stack Image Data No", 0, QApplication::UnicodeUTF8));
-        PushButtonImageProcessingNoiseAddNoise->setText(QApplication::translate("StackImageControllerDialog", "Add Noise", 0, QApplication::UnicodeUTF8));
-        GroupBoxImageProcessingBackground->setTitle(QApplication::translate("StackImageControllerDialog", "Background", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingBackgroundDataNo->setText(QApplication::translate("StackImageControllerDialog", "Stack Image Data No", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingBackgroundType->setText(QApplication::translate("StackImageControllerDialog", "Type", 0, QApplication::UnicodeUTF8));
-        LineEditImageProcessingBackgroundOriginX->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingBackgroundOriginCommaXY->setText(QApplication::translate("StackImageControllerDialog", ",", 0, QApplication::UnicodeUTF8));
-        LineEditImageProcessingBackgroundOriginY->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingBackgroundOriginYZ->setText(QApplication::translate("StackImageControllerDialog", ",", 0, QApplication::UnicodeUTF8));
+        StackImageControllerDialog->setWindowTitle(QApplication::translate("StackImageControllerDialog", "Stack Image Controller", 0));
+        LabelFileLoadFilePath->setText(QApplication::translate("StackImageControllerDialog", "File Path", 0));
+        PushButtonFileLoadBrowse->setText(QApplication::translate("StackImageControllerDialog", "Browse", 0));
+        LabelFileLoadDirectory->setText(QApplication::translate("StackImageControllerDialog", "Directory", 0));
+        LabelFileLoadBaseName->setText(QApplication::translate("StackImageControllerDialog", "BaseName", 0));
+        LabelFileLoadScale->setText(QApplication::translate("StackImageControllerDialog", "Scale", 0));
+        LabelFileLoadScaleCommaXY->setText(QApplication::translate("StackImageControllerDialog", ",", 0));
+        LabelFileLoadScaleYZ->setText(QApplication::translate("StackImageControllerDialog", ",", 0));
+        LabelFileLoadScaleUnit->setText(QApplication::translate("StackImageControllerDialog", "um / voxel", 0));
+        LabelFileLoadLoadTo->setText(QApplication::translate("StackImageControllerDialog", "Store to", 0));
+        LabelFileLoadStoreToStackImageDataNo->setText(QApplication::translate("StackImageControllerDialog", "StackImadeDataNo", 0));
+        PushButtonFileLoadClear->setText(QApplication::translate("StackImageControllerDialog", "Clear", 0));
+        PushButtonFileLoadLoad->setText(QApplication::translate("StackImageControllerDialog", "Load", 0));
+        Tabs->setTabText(Tabs->indexOf(TabFileLoad), QApplication::translate("StackImageControllerDialog", "File Load", 0));
+        LabelFileSaveFilePath->setText(QApplication::translate("StackImageControllerDialog", "File Path", 0));
+        PushButtonFileSaveBrowse->setText(QApplication::translate("StackImageControllerDialog", "Browse", 0));
+        LabelFileSaveDirectory->setText(QApplication::translate("StackImageControllerDialog", "Directory", 0));
+        LabelFileSaveBaseName->setText(QApplication::translate("StackImageControllerDialog", "BaseName", 0));
+        LabelFileSaveDataNo->setText(QApplication::translate("StackImageControllerDialog", "Stack Image Data No", 0));
+        PushButtonFileSaveClear->setText(QApplication::translate("StackImageControllerDialog", "Clear", 0));
+        PushButtonFileSaveSave->setText(QApplication::translate("StackImageControllerDialog", "Save", 0));
+        Tabs->setTabText(Tabs->indexOf(TabFileSave), QApplication::translate("StackImageControllerDialog", "File Save", 0));
+        PushButtonExtractionHandTracing->setText(QApplication::translate("StackImageControllerDialog", "Manual", 0));
+        PushButtonExtractionCancel->setText(QApplication::translate("StackImageControllerDialog", "Cancel", 0));
+        PushButtonExtractionExtract->setText(QApplication::translate("StackImageControllerDialog", "Extract", 0));
+        LabelExtractionBinaryThreshold->setText(QApplication::translate("StackImageControllerDialog", "Binary Threshold", 0));
+        PushButtonExtractionBinaryThresholdGetFromView->setText(QApplication::translate("StackImageControllerDialog", "Ref. View", 0));
+        LabelExtractionMedianFilter->setText(QApplication::translate("StackImageControllerDialog", "Median Filter", 0));
+        CheckBoxExtractionMedianFilter->setText(QApplication::translate("StackImageControllerDialog", "ON", 0));
+        LineEditExtractionBinaryThreshold->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LabelExtractionStartPoint->setText(QApplication::translate("StackImageControllerDialog", "Start Point", 0));
+        LineEditExtractionStartPointX->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LabelExtractionStartPointCommaXY->setText(QApplication::translate("StackImageControllerDialog", ",", 0));
+        LineEditExtractionStartPointY->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LabelExtractionStartPointCommaYZ->setText(QApplication::translate("StackImageControllerDialog", ",", 0));
+        LineEditExtractionStartPointZ->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        PushButtonExtractionStartPointGetFromView->setText(QApplication::translate("StackImageControllerDialog", "Ref. View", 0));
+        LabelExtractionDataNo->setText(QApplication::translate("StackImageControllerDialog", "Stack Image Data No", 0));
+        PushButtonExtractionCurrentDataNo->setText(QApplication::translate("StackImageControllerDialog", "CurrentData", 0));
+        LabelExtractionCalcProp->setText(QApplication::translate("StackImageControllerDialog", "Prop. output file", 0));
+        CheckBoxExtractionCalcProp->setText(QApplication::translate("StackImageControllerDialog", "ON", 0));
+        LabelExtractionCalcPropStart->setText(QApplication::translate("StackImageControllerDialog", "Start", 0));
+        LabelExtractionCalcPropStop->setText(QApplication::translate("StackImageControllerDialog", "Stop", 0));
+        LabelExtractionTargetNo->setText(QApplication::translate("StackImageControllerDialog", "Extracted Data No (for Saving)", 0));
+        LabelExtractionROI->setText(QApplication::translate("StackImageControllerDialog", "ROI", 0));
+        CheckBoxExtractionROI->setText(QApplication::translate("StackImageControllerDialog", "ON", 0));
+        LabelExtractionDoRescanning->setText(QApplication::translate("StackImageControllerDialog", "Do Rescanning", 0));
+        CheckBoxExtractionDoRescanning->setText(QApplication::translate("StackImageControllerDialog", "Yes", 0));
+        label->setText(QApplication::translate("StackImageControllerDialog", "Store To", 0));
+        Tabs->setTabText(Tabs->indexOf(TabExtraction), QApplication::translate("StackImageControllerDialog", "Extraction", 0));
+        GroupBoxImageProcessingGenerateStackImage->setTitle(QApplication::translate("StackImageControllerDialog", "Generate Stack Image", 0));
+        LabelImageProcessingGenerateStackImageParam1->setText(QApplication::translate("StackImageControllerDialog", "Param1", 0));
+        LabelImageProcessingGenerateStackImageParam2->setText(QApplication::translate("StackImageControllerDialog", "Param2", 0));
+        LabelImageProcessingGenerateStackImageParam3->setText(QApplication::translate("StackImageControllerDialog", "Param3", 0));
+        LabelImageProcessingGenerateStackImageParam4->setText(QApplication::translate("StackImageControllerDialog", "Param4", 0));
+        LabelImageProcessingGenerateStackImageDataNo->setText(QApplication::translate("StackImageControllerDialog", "Stack Image Data No", 0));
+        LabelImageProcessingGenerateStackImageType->setText(QApplication::translate("StackImageControllerDialog", "Type", 0));
+        LabelImageProcessingGeneratStackImageParam5->setText(QApplication::translate("StackImageControllerDialog", "Param5", 0));
+        PushButtonImageProcessingGenerateStackImage->setText(QApplication::translate("StackImageControllerDialog", "Generate", 0));
+        GroupBoxImageProcessingNoise->setTitle(QApplication::translate("StackImageControllerDialog", "Noise", 0));
+        LabelImageProcessingNoiseSD->setText(QApplication::translate("StackImageControllerDialog", "SD", 0));
+        LabelImageProcessingNoiseDataNo->setText(QApplication::translate("StackImageControllerDialog", "Stack Image Data No", 0));
+        PushButtonImageProcessingNoiseAddNoise->setText(QApplication::translate("StackImageControllerDialog", "Add Noise", 0));
+        GroupBoxImageProcessingBackground->setTitle(QApplication::translate("StackImageControllerDialog", "Background", 0));
+        LabelImageProcessingBackgroundDataNo->setText(QApplication::translate("StackImageControllerDialog", "Stack Image Data No", 0));
+        LabelImageProcessingBackgroundType->setText(QApplication::translate("StackImageControllerDialog", "Type", 0));
+        LineEditImageProcessingBackgroundOriginX->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LabelImageProcessingBackgroundOriginCommaXY->setText(QApplication::translate("StackImageControllerDialog", ",", 0));
+        LineEditImageProcessingBackgroundOriginY->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LabelImageProcessingBackgroundOriginYZ->setText(QApplication::translate("StackImageControllerDialog", ",", 0));
         LineEditImageProcessingBackgroundOriginZ->setInputMask(QString());
-        LineEditImageProcessingBackgroundOriginZ->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
+        LineEditImageProcessingBackgroundOriginZ->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
         LineEditImageProcessingBackgroundNormalVectorX->setInputMask(QString());
-        LineEditImageProcessingBackgroundNormalVectorX->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingBackgroundNormalVectorCommaXY->setText(QApplication::translate("StackImageControllerDialog", ",", 0, QApplication::UnicodeUTF8));
+        LineEditImageProcessingBackgroundNormalVectorX->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LabelImageProcessingBackgroundNormalVectorCommaXY->setText(QApplication::translate("StackImageControllerDialog", ",", 0));
         LineEditImageProcessingBackgroundNormalVectorY->setInputMask(QString());
-        LineEditImageProcessingBackgroundNormalVectorY->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingBackgroundNormalVectorYZ->setText(QApplication::translate("StackImageControllerDialog", ",", 0, QApplication::UnicodeUTF8));
+        LineEditImageProcessingBackgroundNormalVectorY->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LabelImageProcessingBackgroundNormalVectorYZ->setText(QApplication::translate("StackImageControllerDialog", ",", 0));
         LineEditImageProcessingBackgroundNormalVectorZ->setInputMask(QString());
-        LineEditImageProcessingBackgroundNormalVectorZ->setText(QApplication::translate("StackImageControllerDialog", "1", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingBackgronudOrigin->setText(QApplication::translate("StackImageControllerDialog", "Origin", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingBackgronudNormalVector->setText(QApplication::translate("StackImageControllerDialog", "Normal Vec.", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingBackgronudParameter->setText(QApplication::translate("StackImageControllerDialog", "Parameter", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingBackgroundMax->setText(QApplication::translate("StackImageControllerDialog", "Max", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingBackgroundMin->setText(QApplication::translate("StackImageControllerDialog", "Min", 0, QApplication::UnicodeUTF8));
-        PushButtonImageProcessingBackgroundGenerate->setText(QApplication::translate("StackImageControllerDialog", "Gen. Background", 0, QApplication::UnicodeUTF8));
-        GroupBoxImageProcessingFindLowContrastRegion->setTitle(QApplication::translate("StackImageControllerDialog", "Find Low Contrast Region", 0, QApplication::UnicodeUTF8));
-        LabelImageProcessingDataNo->setText(QApplication::translate("StackImageControllerDialog", "Stack Image Data No", 0, QApplication::UnicodeUTF8));
-        PushButtonImageProcessingFindLCR->setText(QApplication::translate("StackImageControllerDialog", "Find", 0, QApplication::UnicodeUTF8));
-        PushButtonDanger->setText(QApplication::translate("StackImageControllerDialog", "!!DANGER(BKG)!!", 0, QApplication::UnicodeUTF8));
-        PushButtonPoison->setText(QApplication::translate("StackImageControllerDialog", "!!POISON(NZ)!!", 0, QApplication::UnicodeUTF8));
-        PushButtonEmergency->setText(QApplication::translate("StackImageControllerDialog", "!!Emergency(OBJ)!!", 0, QApplication::UnicodeUTF8));
-        Tabs->setTabText(Tabs->indexOf(TabImageProcessing), QApplication::translate("StackImageControllerDialog", "Image Processing", 0, QApplication::UnicodeUTF8));
-        LabelViewControlDataNo->setText(QApplication::translate("StackImageControllerDialog", "StackImageDataNo", 0, QApplication::UnicodeUTF8));
-        CheckBoxViewControlShow->setText(QApplication::translate("StackImageControllerDialog", "Show", 0, QApplication::UnicodeUTF8));
-        CheckBoxViewControlAlphaMode->setText(QApplication::translate("StackImageControllerDialog", "Alpha Mode", 0, QApplication::UnicodeUTF8));
-        CheckBoxViewControlLCR->setText(QApplication::translate("StackImageControllerDialog", "Contrast Prop.", 0, QApplication::UnicodeUTF8));
-        PushButtonViewControlOrthoView->setText(QApplication::translate("StackImageControllerDialog", "Orthoview", 0, QApplication::UnicodeUTF8));
-        PushButtonViewControlResetOrthoViewSize->setText(QApplication::translate("StackImageControllerDialog", "Reset Orthview Size", 0, QApplication::UnicodeUTF8));
-        GroupBoxViewControlThreshold->setTitle(QApplication::translate("StackImageControllerDialog", "Threshold", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlThreshold->setText(QApplication::translate("StackImageControllerDialog", "100", 0, QApplication::UnicodeUTF8));
-        GroupBoxViewControlPointer->setTitle(QApplication::translate("StackImageControllerDialog", "Pointer", 0, QApplication::UnicodeUTF8));
-        LabelViewControlPointerX->setText(QApplication::translate("StackImageControllerDialog", "X", 0, QApplication::UnicodeUTF8));
-        LabelViewControlPointerY->setText(QApplication::translate("StackImageControllerDialog", "Y", 0, QApplication::UnicodeUTF8));
-        LabelViewControlPointerZ->setText(QApplication::translate("StackImageControllerDialog", "Z", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlPointerXum->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlPointerYum->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlPointerZum->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
+        LineEditImageProcessingBackgroundNormalVectorZ->setText(QApplication::translate("StackImageControllerDialog", "1", 0));
+        LabelImageProcessingBackgronudOrigin->setText(QApplication::translate("StackImageControllerDialog", "Origin", 0));
+        LabelImageProcessingBackgronudNormalVector->setText(QApplication::translate("StackImageControllerDialog", "Normal Vec.", 0));
+        LabelImageProcessingBackgronudParameter->setText(QApplication::translate("StackImageControllerDialog", "Parameter", 0));
+        LabelImageProcessingBackgroundMax->setText(QApplication::translate("StackImageControllerDialog", "Max", 0));
+        LabelImageProcessingBackgroundMin->setText(QApplication::translate("StackImageControllerDialog", "Min", 0));
+        PushButtonImageProcessingBackgroundGenerate->setText(QApplication::translate("StackImageControllerDialog", "Gen. Background", 0));
+        GroupBoxImageProcessingFindLowContrastRegion->setTitle(QApplication::translate("StackImageControllerDialog", "Find Low Contrast Region", 0));
+        LabelImageProcessingDataNo->setText(QApplication::translate("StackImageControllerDialog", "Stack Image Data No", 0));
+        PushButtonImageProcessingFindLCR->setText(QApplication::translate("StackImageControllerDialog", "Find", 0));
+        PushButtonDanger->setText(QApplication::translate("StackImageControllerDialog", "!!DANGER(BKG)!!", 0));
+        PushButtonPoison->setText(QApplication::translate("StackImageControllerDialog", "!!POISON(NZ)!!", 0));
+        PushButtonEmergency->setText(QApplication::translate("StackImageControllerDialog", "!!Emergency(OBJ)!!", 0));
+        Tabs->setTabText(Tabs->indexOf(TabImageProcessing), QApplication::translate("StackImageControllerDialog", "Image Processing", 0));
+        LabelViewControlDataNo->setText(QApplication::translate("StackImageControllerDialog", "StackImageDataNo", 0));
+        CheckBoxViewControlShow->setText(QApplication::translate("StackImageControllerDialog", "Show", 0));
+        CheckBoxViewControlAlphaMode->setText(QApplication::translate("StackImageControllerDialog", "Alpha Mode", 0));
+        CheckBoxViewControlLCR->setText(QApplication::translate("StackImageControllerDialog", "Contrast Prop.", 0));
+        PushButtonViewControlOrthoView->setText(QApplication::translate("StackImageControllerDialog", "Orthoview", 0));
+        PushButtonViewControlResetOrthoViewSize->setText(QApplication::translate("StackImageControllerDialog", "Reset Orthview Size", 0));
+        GroupBoxViewControlThreshold->setTitle(QApplication::translate("StackImageControllerDialog", "Threshold", 0));
+        LineEditViewControlThreshold->setText(QApplication::translate("StackImageControllerDialog", "100", 0));
+        GroupBoxViewControlPointer->setTitle(QApplication::translate("StackImageControllerDialog", "Pointer", 0));
+        LabelViewControlPointerX->setText(QApplication::translate("StackImageControllerDialog", "X", 0));
+        LabelViewControlPointerY->setText(QApplication::translate("StackImageControllerDialog", "Y", 0));
+        LabelViewControlPointerZ->setText(QApplication::translate("StackImageControllerDialog", "Z", 0));
+        LineEditViewControlPointerXum->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LineEditViewControlPointerYum->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LineEditViewControlPointerZum->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
         CheckBoxViewControlPointer->setText(QString());
-        GroupBoxViewControlROI->setTitle(QApplication::translate("StackImageControllerDialog", "Region of Interest", 0, QApplication::UnicodeUTF8));
-        LabelViewControlROIX->setText(QApplication::translate("StackImageControllerDialog", "X", 0, QApplication::UnicodeUTF8));
-        LabelViewControlROIXFrom->setText(QApplication::translate("StackImageControllerDialog", "From", 0, QApplication::UnicodeUTF8));
-        LabelViewControlROIXTo->setText(QApplication::translate("StackImageControllerDialog", "To", 0, QApplication::UnicodeUTF8));
-        LabelViewControlROIY->setText(QApplication::translate("StackImageControllerDialog", "Y", 0, QApplication::UnicodeUTF8));
-        LabelViewControlROIYFrom->setText(QApplication::translate("StackImageControllerDialog", "From", 0, QApplication::UnicodeUTF8));
-        LabelViewControlROIYTo->setText(QApplication::translate("StackImageControllerDialog", "To", 0, QApplication::UnicodeUTF8));
-        LabelViewControlROIZ->setText(QApplication::translate("StackImageControllerDialog", "Z", 0, QApplication::UnicodeUTF8));
-        LabelViewControlROIZFrom->setText(QApplication::translate("StackImageControllerDialog", "From", 0, QApplication::UnicodeUTF8));
-        LabelViewControlROIZTo->setText(QApplication::translate("StackImageControllerDialog", "To", 0, QApplication::UnicodeUTF8));
-        GroupBoxViewControlColor->setTitle(QApplication::translate("StackImageControllerDialog", "Color", 0, QApplication::UnicodeUTF8));
-        LabelViewControlColorR->setText(QApplication::translate("StackImageControllerDialog", "R", 0, QApplication::UnicodeUTF8));
-        LabelViewControlColorG->setText(QApplication::translate("StackImageControllerDialog", "G", 0, QApplication::UnicodeUTF8));
-        LabelViewControlColorB->setText(QApplication::translate("StackImageControllerDialog", "B", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlColorR->setText(QApplication::translate("StackImageControllerDialog", "255", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlColorG->setText(QApplication::translate("StackImageControllerDialog", "255", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlColorB->setText(QApplication::translate("StackImageControllerDialog", "255", 0, QApplication::UnicodeUTF8));
-        GroupBoxViewControlTranslation->setTitle(QApplication::translate("StackImageControllerDialog", "Translation", 0, QApplication::UnicodeUTF8));
-        LabelViewControlTranslationX->setText(QApplication::translate("StackImageControllerDialog", "X", 0, QApplication::UnicodeUTF8));
-        LabelViewControlTranslationY->setText(QApplication::translate("StackImageControllerDialog", "Y", 0, QApplication::UnicodeUTF8));
-        LabelViewControlTranslationZ->setText(QApplication::translate("StackImageControllerDialog", "Z", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlTranslationY->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlTranslationZ->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlTranslationXum->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlTranslationYum->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlTranslationZum->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        LineEditViewControlTranslationX->setText(QApplication::translate("StackImageControllerDialog", "0", 0, QApplication::UnicodeUTF8));
-        Tabs->setTabText(Tabs->indexOf(TabViewControl), QApplication::translate("StackImageControllerDialog", "View Control", 0, QApplication::UnicodeUTF8));
-        LabelPropertiesImageNum->setText(QApplication::translate("StackImageControllerDialog", "Image #", 0, QApplication::UnicodeUTF8));
-        LabelPropertiesImageSize->setText(QApplication::translate("StackImageControllerDialog", "Image Size", 0, QApplication::UnicodeUTF8));
-        LabelPropertiesDirectory->setText(QApplication::translate("StackImageControllerDialog", "Directory", 0, QApplication::UnicodeUTF8));
-        LabelPropertiesImageName->setText(QApplication::translate("StackImageControllerDialog", "Image Name", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        label_7->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        label_8->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        label_9->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        label_10->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        label_11->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0, QApplication::UnicodeUTF8));
-        Tabs->setTabText(Tabs->indexOf(TabProperties), QApplication::translate("StackImageControllerDialog", "Properties", 0, QApplication::UnicodeUTF8));
+        GroupBoxViewControlROI->setTitle(QApplication::translate("StackImageControllerDialog", "Region of Interest", 0));
+        LabelViewControlROIX->setText(QApplication::translate("StackImageControllerDialog", "X", 0));
+        LabelViewControlROIXFrom->setText(QApplication::translate("StackImageControllerDialog", "From", 0));
+        LabelViewControlROIXTo->setText(QApplication::translate("StackImageControllerDialog", "To", 0));
+        LabelViewControlROIY->setText(QApplication::translate("StackImageControllerDialog", "Y", 0));
+        LabelViewControlROIYFrom->setText(QApplication::translate("StackImageControllerDialog", "From", 0));
+        LabelViewControlROIYTo->setText(QApplication::translate("StackImageControllerDialog", "To", 0));
+        LabelViewControlROIZ->setText(QApplication::translate("StackImageControllerDialog", "Z", 0));
+        LabelViewControlROIZFrom->setText(QApplication::translate("StackImageControllerDialog", "From", 0));
+        LabelViewControlROIZTo->setText(QApplication::translate("StackImageControllerDialog", "To", 0));
+        GroupBoxViewControlColor->setTitle(QApplication::translate("StackImageControllerDialog", "Color", 0));
+        LabelViewControlColorR->setText(QApplication::translate("StackImageControllerDialog", "R", 0));
+        LabelViewControlColorG->setText(QApplication::translate("StackImageControllerDialog", "G", 0));
+        LabelViewControlColorB->setText(QApplication::translate("StackImageControllerDialog", "B", 0));
+        LineEditViewControlColorR->setText(QApplication::translate("StackImageControllerDialog", "255", 0));
+        LineEditViewControlColorG->setText(QApplication::translate("StackImageControllerDialog", "255", 0));
+        LineEditViewControlColorB->setText(QApplication::translate("StackImageControllerDialog", "255", 0));
+        GroupBoxViewControlTranslation->setTitle(QApplication::translate("StackImageControllerDialog", "Translation", 0));
+        LabelViewControlTranslationX->setText(QApplication::translate("StackImageControllerDialog", "X", 0));
+        LabelViewControlTranslationY->setText(QApplication::translate("StackImageControllerDialog", "Y", 0));
+        LabelViewControlTranslationZ->setText(QApplication::translate("StackImageControllerDialog", "Z", 0));
+        LineEditViewControlTranslationY->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LineEditViewControlTranslationZ->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LineEditViewControlTranslationXum->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LineEditViewControlTranslationYum->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LineEditViewControlTranslationZum->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        LineEditViewControlTranslationX->setText(QApplication::translate("StackImageControllerDialog", "0", 0));
+        Tabs->setTabText(Tabs->indexOf(TabViewControl), QApplication::translate("StackImageControllerDialog", "View Control", 0));
+        LabelPropertiesImageNum->setText(QApplication::translate("StackImageControllerDialog", "Image #", 0));
+        LabelPropertiesImageSize->setText(QApplication::translate("StackImageControllerDialog", "Image Size", 0));
+        LabelPropertiesDirectory->setText(QApplication::translate("StackImageControllerDialog", "Directory", 0));
+        LabelPropertiesImageName->setText(QApplication::translate("StackImageControllerDialog", "Image Name", 0));
+        label_5->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0));
+        label_6->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0));
+        label_7->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0));
+        label_8->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0));
+        label_9->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0));
+        label_10->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0));
+        label_11->setText(QApplication::translate("StackImageControllerDialog", "TextLabel", 0));
+        Tabs->setTabText(Tabs->indexOf(TabProperties), QApplication::translate("StackImageControllerDialog", "Properties", 0));
     } // retranslateUi
 
 };
